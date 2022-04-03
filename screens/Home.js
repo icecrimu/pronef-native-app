@@ -1,7 +1,15 @@
-import React from "react"
-import { Text } from "react-native"
+import React, { useState } from "react"
+import { View, SafeAreaView, FlatList, Text } from "react-native"
+
+import { COLORS, NFTData } from "../constants"
+import { NFTCard, HomeHeader, FocusedStatusBar } from "../components"
+
 const Home = () => {
-  return <Text>Home</Text>
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <FocusedStatusBar background={COLORS.primary} />
+    </SafeAreaView>
+  )
 }
 
 export default Home
