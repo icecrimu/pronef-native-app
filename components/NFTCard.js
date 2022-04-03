@@ -39,22 +39,22 @@ const NFTCard = ({ data }) => {
           titleSize={SIZES.large}
           subTitleSize={SIZES.small}
         />
-      </View>
 
-      <View
-        style={{
-          marginTop: SIZES.font,
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center"
-        }}
-      >
-        <EthPrice price={data.price} />
-        <RectButton
-          minWidth={120}
-          fontSize={SIZES.font}
-          handlePress={() => navigation.navigate("Details", { data })}
-        />
+        <View
+          style={{
+            marginTop: SIZES.font,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center"
+          }}
+        >
+          <EthPrice price={data.price} />
+          <RectButton
+            minWidth={120}
+            fontSize={SIZES.font}
+            handlePress={() => navigation.navigate("Details", { data })}
+          />
+        </View>
       </View>
     </View>
   )
