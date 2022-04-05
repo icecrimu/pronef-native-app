@@ -72,6 +72,7 @@ const Details = ({ route, navigation }) => {
         ListHeaderComponent={() => (
           <>
             <DetailsHeader data={data} navigation={navigation} />
+            <SubInfo />
           </>
         )}
       />
