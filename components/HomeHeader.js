@@ -42,6 +42,28 @@ const HomeHeader = ({ onSearch }) => {
           />
         </View>
       </View>
+
+      <View style={{ marginVertical: SIZES.font }}>
+        <Text
+          style={{
+            fontFamily: FONTS.regular,
+            fontSize: SIZES.small,
+            color: COLORS.white
+          }}
+        >
+          Hello, Megumin 👋
+        </Text>
+        <Text
+          style={{
+            fontFamily: FONTS.bold,
+            fontSize: SIZES.large,
+            color: COLORS.white,
+            marginTop: SIZES.base / 2
+          }}
+        >
+          Let's find a masterpiece
+        </Text>
+      </View>
     </View>
   )
 }
